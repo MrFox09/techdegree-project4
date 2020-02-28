@@ -6,13 +6,6 @@
 
 document.getElementById('btn__reset').addEventListener('click', function(){
 
-  const test = new Phrase('I Love You');
-
-  test.addPhraseToDisplay();
-  test.showMatchedLetter('l');
-
-
-
 
 
 

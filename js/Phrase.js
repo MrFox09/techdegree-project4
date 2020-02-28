@@ -60,8 +60,7 @@ class Phrase {
 
     for (let i = 0; i < phrases.length; i++) {
       if (phrases[i].textContent === letter) {
-        const match = phrases[i];
-        match.setAttribute('class', `show letter ${letter}`);
+        phrases[i].setAttribute('class', `show letter ${letter}`);
 
       }
     }
