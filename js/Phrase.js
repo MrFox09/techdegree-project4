@@ -44,8 +44,6 @@ class Phrase {
     for (let i = 0; i < this.phrase.length; i++) {
       if (this.phrase.charAt(i) === guess) {
         return true;
-      } else {
-        return false;
       }
     }
   }
