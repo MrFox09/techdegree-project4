@@ -17,7 +17,7 @@ class Game {
     //hides the overlay div
     document.getElementById('overlay').style.display = 'none';
 
-    this.activePhrase = getRandomPhrase();
+    this.activePhrase = this.getRandomPhrase();
     this.activePhrase.addPhraseToDisplay();
 
   }
@@ -109,23 +109,48 @@ class Game {
     if (this.checkForWin()) {
       message.textContent = 'YOU WIN!';
       overlay.setAttribute('class', 'win');
+      this.resetGame();
 
     } else {
       message.textContent = 'YOU LOSE!';
       overlay.setAttribute('class', 'lose');
+      this.resetGame();
     }
   }
 
+// called by the gameOver function to reset the game
   resetGame() {
 
-    const phraseDiv = document.querySelector('#phrase ul');
-    const li = document.querySelectorAll('#phrase ul li');
+    //deletes every li in the ul element
 
-    for (let i = 0; i < phraseDiv.length; i++) {
-      phraseDiv.removeChild(li[i]);
+    const ul = document.querySelectorAll('#phrase ul')[0];
+    ul.innerHTML ="";
+
+    // sets every Button to disabled false and set the class to start value
+    const keyRowButtons = document.querySelectorAll('.keyrow button');
+
+    keyRowButtons.forEach(button => {
+
+      button.disabled = false;
+      button.setAttribute('class','key');
+
+    });
 
 
-    }
+    // replace every lostheart to a liveheart
+    const lostLives = document.querySelectorAll("img[src='images/lostHeart.png']");
+
+    lostLives.forEach(image => {
+
+      image.setAttribute('src', 'images/liveHeart.png');
+
+
+
+
+
+    });
 
   }
+
+
 }
