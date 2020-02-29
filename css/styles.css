@@ -4,7 +4,7 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  --color-win: #437849;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -20,7 +20,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oxanium', ;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-color: black;
 }
 
 li, ol, ul {
@@ -63,6 +64,8 @@ button {
 #btn__reset {
 	width: 200px;
 	margin: 0 auto;
+  background-color: #918dd4;
+  color:white;
 }
 
 .main-container {
@@ -72,6 +75,7 @@ button {
   height: 100%;
   max-height: 900px;
   text-align: center;
+  background-color: #1e1f21;
 }
 
 .section {
@@ -86,7 +90,7 @@ button {
 /* Title */
 
 .header {
-  color: #3a3f58;
+  color: #918dd4;
 }
 
 
@@ -110,9 +114,9 @@ button {
 
 
 .show {
-  color: #fff;
-  background-color: #4ac0d5;
-  font-size: 20px;
+  color: black;
+  background-color: #dfe02a;
+  font-size: 30px;
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
@@ -131,14 +135,14 @@ button {
 }
 
 .chosen {
-  background: #3a3f58;
+  background: #439359;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
 
 .wrong {
-  background: #f7a964;
+  background: #f2493b;
   color: #FFFFFF;
 }
 
@@ -166,7 +170,7 @@ button {
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: #FFFFFF;
+  color: white;
   justify-content: center;
   top: 0;
   bottom: 0;
@@ -176,11 +180,11 @@ button {
 }
 
 .title {
-  color: #FFF;
+  color: #918dd4;
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #1e1f21;
 }
 
 .start a {
@@ -196,7 +200,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: #912424;
 }
 
 .lose a {
